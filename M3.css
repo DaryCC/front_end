@@ -1,0 +1,10 @@
+div {
+    border: 5px solid blue;
+  }
+  
+  p {
+    border: 5px solid black;
+    width: 50%;
+    margin-left: 25%;
+    margin-right:25%;
+  }
