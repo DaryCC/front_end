@@ -1,10 +1,20 @@
-div {
-    border: 5px solid blue;
-  }
+/*Make parent element a flex container*/
+body{
+  background-color: #86d18a;
   
-  p {
-    border: 5px solid black;
-    width: 50%;
-    margin-left: 25%;
-    margin-right:25%;
-  }
+}
+ul   {
+  display:flex  ; /*or inline-flex*/
+  list-style-type: none;;
+  flex-flow:row wrap ;
+  justify-content: space-around;
+
+}
+
+li {
+  width: 200px;
+  height: 100px;
+  background-color: #8cacea;
+  text-align:center;
+  margin: 4px;
+}
