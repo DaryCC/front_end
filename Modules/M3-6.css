@@ -8,14 +8,22 @@ ul {
 
 li {
    /* flex-grow: 1; */
-   flex:0 1 auto;
+   flex: 1  1 auto;
    background-color: #8cacea;
    margin: 8px;
-   min-height: 200px;
+   min-height: 100px;
    color: #fff;
    padding: 4px;
    text-align: justify;
   /*flex-basis: 100px; *//*auto: if you increased
     the content in the flex-item, it 
     automatically resizes to fit*/
+}
+li:nth-child(1) {
+	flex: 2 1 0; /*same as just writing flex: 2*/
+}
+
+li:nth-child(2){
+	flex: 8 1 0;
+	background-color: #8cacea;
 }
