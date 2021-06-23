@@ -1,0 +1,19 @@
+ul {
+  display: flex;
+  border: 1px solid red;
+  padding: 0;
+  list-style: none;
+  background-color: #a6a6fc;
+}
+
+li {
+   /* flex-grow: 1; */
+   background-color: #8cacea;
+   margin: 8px;
+   min-height: 150px;
+   color: #fff;
+   padding: 4px;
+   flex-basis: 150px; /*auto: if you increased
+    the content in the flex-item, it 
+    automatically resizes to fit*/
+}

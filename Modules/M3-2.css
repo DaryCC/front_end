@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  padding :0;
+  height: calc(100vh-20px);
+  width: calc(100vw-20px);
+  border: 10px solid rgb(27, 219, 68);
+}
+.container{
+  margin: 0;
+  height:inherit;
+  width: inherit;
+  border: 10px solid red;
+}
+ul {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;/*en eje x o main axis */
+  align-content:stretch;/**/
+  /*align-items:center;/*en eje y o cross axis*/
+  background-color: #45acac;
+}
+
+li {
+  width: 150px;
+  /*height: 100px; */
+  background-color: #194292;
+  margin: 8px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif, Geneva, Tahoma, sans-serif;
+}
+
+/* apply to all list items except the first one*/
+li:not(:first-child) {
+  font-size: 2rem;
+}

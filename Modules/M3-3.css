@@ -1,0 +1,27 @@
+/*apply to the 1st list element, n=1*/
+
+li:nth-child(3) {
+  order: 1
+}
+li:nth-child(1) {
+  order: 1
+}
+
+
+ul {
+  display: flex;
+  border: 1px solid red;
+  padding: 0;
+  list-style: none;
+  background-color: #e8e8e9;
+}
+
+li {
+  color: #fff;	
+    width: 100px;
+    font-size: 2em;
+   min-height: 100px;
+    background-color: #8cacea;
+   margin: 8px;
+   text-align: center;
+}
