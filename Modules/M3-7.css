@@ -9,7 +9,7 @@ ul {
   padding: 0;
   list-style: none;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items:flex-start;
   min-height: 50%;
   background-color: #e8e8e9;
 }
@@ -18,10 +18,12 @@ li {
   width: 100px;
   background-color: #8cacea;
   margin: 8px;
-  font-size: 2rem;
+  font-size: 3rem;
+
 }
 
 li:first-child {
   background-color: red;
-  align-self: flex-end;
+  font-size: 3rem;
+  align-self: auto;
 }	
