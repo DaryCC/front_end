@@ -1,0 +1,49 @@
+body{
+    margin:0 ;
+    padding:0 ;
+}
+ul{
+    background-color: rgb(2, 8, 68);
+    padding: 2px;
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    align-items: baseline;
+
+}
+li{
+    color:rgb(195, 247, 58);
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Righteous', cursive;
+    padding: 10px;
+}
+li:nth-child(2):hover,
+li:nth-child(3):hover,
+li:nth-child(4):hover{
+    color:rgb(19, 111, 99);
+   
+}
+li:nth-child(1){
+    margin-left: 0;
+    margin-right: auto;
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
+    
+
+}
+
+li:nth-child(5){
+    margin-right: 2px;
+    margin-left: auto;
+    padding-right: 2em;
+    padding-left: 2em;
+   
+    background-color: rgb(19, 111, 99);
+    border-radius: 20px;
+
+}
+li:nth-child(5):hover{
+    background-color:rgb(93, 169, 233);
+    cursor: pointer;
+    transition: 400ms ease-in;
+}

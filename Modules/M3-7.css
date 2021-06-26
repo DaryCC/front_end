@@ -25,5 +25,6 @@ li {
 li:first-child {
   background-color: red;
   font-size: 3rem;
-  align-self: auto;
+  align-self:center;
 }	
+/* tested */
