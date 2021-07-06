@@ -1,0 +1,29 @@
+ul {
+  display: flex;
+  border: 1px solid red;
+  padding: 0;
+  list-style: none;
+  background-color: #e8e8e9;
+}
+
+li {
+    flex: 1; /*remember this is same as flex: 1 1 0;*/
+  border: 2px solid red;
+  margin: 1em;
+  background-color: #8cacea;
+  
+}
+ul {
+  display: flex;
+  border: 1px solid red;
+  padding: 0;
+  list-style: none;
+  background-color: #e8e8e9;
+}
+
+li {
+    flex: auto; /*remember this is same as flex: 1 1 auto;*/
+  border: 2px solid red;
+  margin: 1em;
+  background-color: #8cacea;
+}
