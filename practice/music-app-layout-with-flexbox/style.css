@@ -147,3 +147,26 @@ footer div.control i{
   margin-right: 20px;
 
 }
+@media screen and (max-width: 700px){
+  .music-head {
+  
+    flex-direction: column;
+  }
+  .catty-music{
+    align-items: flex-start;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding-left: 0px;
+    }
+  .catty-music div:nth-child(1){
+      margin-bottom: 5px;
+      }
+  .catty-music div:nth-child(1) p:first-child{
+        font-size: 1.2em;
+        margin: 20px 0 20px;
+        }
+        
+
+}
