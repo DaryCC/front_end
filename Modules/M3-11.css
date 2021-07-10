@@ -12,3 +12,10 @@ li {
   color: rgb(227, 100, 100);
   font-size: 1em;
 }
+
+@media screen and (max-width: 769px) {
+	/* code here only applies to screen devices that have a width lesser than 769px*/
+	ul {
+		flex-direction: column; /* Onmaller devices, switch the direction*/
+	}
+}
