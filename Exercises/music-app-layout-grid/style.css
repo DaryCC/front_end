@@ -1,0 +1,184 @@
+/* basic reset */
+body{
+  margin: 0;
+  padding: 0;
+}
+/*=============================
+  default grid set up -> mobile first
+===============================*/
+body{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  font-family: Lato, sans-serif;
+  grid-template-rows: 1fr  90px  ;
+  grid-template-columns: 1fr;
+  grid-template-areas: "content"
+                       "footer";
+  
+}
+img{
+  max-width: 100%;
+  
+}
+.albumCover{
+  grid-area: albumCover;
+  
+
+}
+.aside{
+ grid-area: sidebar;
+ background-color: #f2f2f2;
+
+
+}
+.content{
+  grid-area: content;
+
+}
+.main_header{
+  background-color: #4e4e4e;
+  display: grid;
+  grid-template-areas:"albumCover" 
+                      "details" ;
+
+}
+.details{
+  color:white;
+  grid-area: details;
+  
+}
+.controlf i {
+  padding-bottom: 30px;
+}
+.tracklist{
+  
+	font-size: 0.8em;
+	
+}
+.tracklist > div{
+  display: flex;
+}
+.tracklist > div p{
+flex: 0 0 25%;
+}
+.tracklist div:nth-child(2n){
+  background-color: #f2f2f2;
+ 
+}
+
+.footer{
+  grid-area:footer ;
+  background-color:  rgba(61, 100, 158, .9);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-areas: "songplaying  control";
+
+}
+.mini{
+  width: 60px;/*Same memo, don't grow or shrink - stay at 280px*/
+  
+  margin-right: 10px;
+}
+.songplaying{
+  grid-area: songplaying;
+  /* background-color: thistle; */
+  display:flex;
+  align-items: center;
+}
+.minitext {
+  color: white;
+  font-size: .9rem;
+  margin-left: 10px;
+}
+.control{
+  grid-area: control;
+  display: flex;
+  color:white;
+  align-items: center;
+  margin-left: auto;
+
+}
+.control i{
+  margin-right: 40px;
+  flex:0 0 5px;
+  
+}
+
+/* ===============
+Mobile: Phones
+==================*/
+@media  screen and (max-width: 600px) {
+  .aside{
+    display: none;
+   }
+   img{
+     align-items: center;
+   }
+   .albumCover > img {
+     width: 150px;
+     
+   }
+   .details div p:not(:first-child)
+   {
+      display: none;
+   }
+   .main_header{
+    justify-items: center;
+  }
+  .main_header> .details{
+    text-align: center;
+  }
+  .songplaying img {
+    display: none;
+  }
+  .control .hide{
+    display: none;
+  }
+
+  
+}
+/* ===============
+LArger screens
+==================*/
+@media only screen and (min-width:600px){
+  body{
+  grid-template-columns:40px 1fr ;
+  grid-template-rows: 1fr 90px;
+  grid-template-areas: "sidebar content" 
+                       "footer footer";
+ 
+  }
+  .aside{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .aside i {
+    display: block;
+  }
+  .albumCover{
+    width: 240px;
+    padding: 40px 4px 40px 20px;
+  
+  }
+  img{
+    margin-left: 5px;
+  }
+  .main_header{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    grid-template-areas: "albumCover details";
+  }
+  .details>div:nth-child(2){
+    margin-top: 120px;
+    
+  }
+  .details div{
+    margin-left: 0px;
+  }
+  .details > div >p:first-child{
+    font-size: 1.5rem;
+  }
+
+}

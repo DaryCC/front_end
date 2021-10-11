@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <title>Modifying element attributes</title>
+     </head>
+     <body>
+         <h1 id="logo">Learn DOM Manipulation with Javascript</h1>
+         <label for="prueba">What do you want to learn about the DOM?</label>
+         <input type="text" name="question" id="question" placeholder="Insert Question Here">
+         <script type="text/javascript" >
+                var h1 = document.querySelector('h1');
+                var input = document.querySelector('input[type=text]');
+                console.log("input attributes as follows:", input.getAttributeNames());
+         </script>
+     </body>
+ </html>
